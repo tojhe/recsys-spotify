@@ -12,6 +12,6 @@ The library Spotipy is heavily used in this system, in order to integrate Spotif
 
 Certain account and client details have been removed in the scripts for privacy <br>
 
-For more information and documentation on the process and workings of this recommender system, please visit the associated Medium link provided<br>
+For more information and documentation on the process and workings of this recommender system, you can read more<a href='https://medium.com/@jinator.biz/spotify-playlist-song-recsys-fd10f1d05a3b'>here</a>.<br>
 
 Cheers and regards - Jin Howe

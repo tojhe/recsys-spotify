@@ -1,7 +1,7 @@
 <h1> Spotify RecSys Challenge</h1>
 
 <table>
-<tr><td><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/580px-AmazonWebservices_Logo.svg.png' width = 150></td><td><img src='https://newsroom.spotify.com/media/mediakit/2018-03-19_22-28-46/Spotify_Logo_RGB_Green.png' width = 150></td></tr>
+<tr><td><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/580px-AmazonWebservices_Logo.svg.png' width = 150></td><td><img src='https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png' width = 150></td></tr>
 </table>
 <h3>Foreword</h3>
 <li>This recommender system was built and is hosted on the services of S3 and Sagemaker from AWS.</li><br>

@@ -12,7 +12,7 @@
 
 <li>Certain account and client details have been removed in the scripts for privacy </li><br>
 
-<li> recommender.py is the recommender engine. Execute run.py to run the recommender system.
+<li> recommender.py is the recommender engine. Execute run.py to run the recommender system.</li><br>
 
 <li>For more walkthrough on the process and workings of this recommender system, you can read more <a href='https://medium.com/@jinator.biz/spotify-playlist-song-recsys-fd10f1d05a3b'><b><u>here</b></u></a>.</li><br>
 

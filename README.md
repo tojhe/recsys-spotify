@@ -4,7 +4,7 @@
 <tr><td><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/580px-AmazonWebservices_Logo.svg.png' width = 150></td><td><img src='https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png' width = 150></td></tr>
 </table>
 <h3>Foreword</h3>
-<li>This recommender system was built and is hosted on the services of S3 and Sagemaker from AWS. I have converted ipynb files to simple py scripts for the purpose of this github repo.</li><br>
+<li>This recommender system was built and is hosted on the services of S3 and Sagemaker from AWS. I have converted ipynb files to simple python scripts for the purpose of this github repo.</li><br>
 
 <li>The dataset comprises Million Playlist Dataset (MPD) and API retrieved song meta and audio feature, both officially provided by Spotify. The MPD will not be hosted here in accordance to Spotify RecSys Challenge Terms & Condition</li><br>
 

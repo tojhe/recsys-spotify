@@ -90,7 +90,7 @@ class recommender():
         return self.song_audio_features
 
     def user_playlist_recommend_tracks(self):
-        '''Uses the PCAed audio features of the clustered songs'''
+        '''Uses the audio features of the clustered songs'''
 
 
         df = pd.DataFrame(self.song_audio_features).T
@@ -126,7 +126,6 @@ class recommender():
         ## Recommend tracks
         recommended_tracks = []
 
-        #
 
         for i, track in df.iterrows():  ## df is the current playlist to recommend
             genre_tracks = []

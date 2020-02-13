@@ -15,7 +15,7 @@
 
 <li>Certain account and client details have been removed in the scripts for privacy </li><br>
 
-<li> recommender.py is the recommender engine. Execute run.py to run the recommender system and add songs to the playlist directly into the Spotify app (Provided authentication provided).</li><br>
+<li> recommender.py is the recommender engine. Execute run.py to run the recommender system and add songs to the playlist directly into the Spotify app (if authentication provided).</li><br>
 
 
 <h3></h3>

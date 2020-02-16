@@ -69,7 +69,8 @@ class recommender():
 
     def user_get_playlist_track_audio_feat(self):
         song_audio_features = dict()
-        for i, song in enumerate(self.track_list):
+        for i, song in enumerate(self.track_list)
+            # marker comment: code written by tojhe
             print (i, song)
 
             ## Access spotify api to retrieve audio features for specific track
@@ -148,6 +149,7 @@ class recommender():
             cos_dist = pd.Series(cos_dist.reshape(-1),
                                  index=database_df[database_df.index.isin(genre_tracks)].iloc[:, :-3].index)
             cos_dist.sort_values(ascending=False, inplace=True)
+
 
             try:
                 close_position = 1

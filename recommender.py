@@ -22,6 +22,8 @@ class recommender():
         if credentials == None:
             self.credentials = SpotifyClientCredentials(client_id= clientID,client_secret=clientSecret)
 
+        self.spotify = spotipy.Spotify(client_credentials_manager=credentials)
+
         ## Scope
         self.scope = scope
 
@@ -38,7 +40,7 @@ class recommender():
         if token == None:
             self.token = util.prompt_for_user_token(self.username, client_id=self.clientID,
                                                     client_secret=self.clientSecret,
-                                                    scope=self.scope, redirect_uri='http://localhost:8888/callback')
+                                                    scope=self.scope, redirect_uri='http://localhost:8888/')
         else:
             self.token = token
 
@@ -69,7 +71,7 @@ class recommender():
 
     def user_get_playlist_track_audio_feat(self):
         song_audio_features = dict()
-        for i, song in enumerate(self.track_list)
+        for i, song in enumerate(self.track_list):
             # marker comment: code written by tojhe
             print (i, song)
 
@@ -81,9 +83,9 @@ class recommender():
                 del (local_feature[item])
 
             song_audio_features[song] = local_feature
-            track_info = spotify.track(song)
-            song_audio_features[song]['artist_genres'] = spotify.artist(track_info['artists'][0]['uri'])['genres']
-            song_audio_features[song]['artist_popularity'] = spotify.artist(track_info['artists'][0]['uri'])[
+            track_info = self.spotify.track(song)
+            song_audio_features[song]['artist_genres'] = self.spotify.artist(track_info['artists'][0]['uri'])['genres']
+            song_audio_features[song]['artist_popularity'] = self.spotify.artist(track_info['artists'][0]['uri'])[
                 'popularity']
             song_audio_features[song]['explicit'] = track_info['explicit']
 

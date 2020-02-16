@@ -1,7 +1,7 @@
 import recommender
 
-def auto_rec_add(add_tracks='max', username, clientID = '<>', clientSecret = '<>'):
-    pl_uri = raw_input('Please enter playlist URI: ')
+def auto_rec_add(username, add_tracks='max', clientID = '<>', clientSecret = '<>'):
+    pl_uri = input('Please enter playlist URI: ')
     uri = pl_uri.split(':')[-1]
 
     test_class = recommender.recommender(username=username, clientID=clientID, clientSecret=clientSecret)
@@ -19,4 +19,6 @@ def auto_rec_add(add_tracks='max', username, clientID = '<>', clientSecret = '<>
 
 if __name__ == '__main__':
     username = input('Playlist Owner URI: ')
-    auto_rec_add(username=username)
+    clientID = input('clientID: ')
+    clientSecret = input('clientSecret: ')
+    auto_rec_add(username=username, clientID = clientID, clientSecret=clientSecret)

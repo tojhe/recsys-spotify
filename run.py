@@ -1,8 +1,9 @@
 import recommender
 
 def auto_rec_add(username, add_tracks='max', clientID = '<>', clientSecret = '<>'):
-    pl_uri = input('Please enter playlist URI: ')
+    pl_uri = raw_input('Please enter playlist URI: ')
     uri = pl_uri.split(':')[-1]
+    username = username.split(':')[-1]
 
     test_class = recommender.recommender(username=username, clientID=clientID, clientSecret=clientSecret)
     print('Token Retrieved')
@@ -18,7 +19,7 @@ def auto_rec_add(username, add_tracks='max', clientID = '<>', clientSecret = '<>
 
 
 if __name__ == '__main__':
-    username = input('Playlist Owner URI: ')
-    clientID = input('clientID: ')
-    clientSecret = input('clientSecret: ')
-    auto_rec_add(username=username, clientID = clientID, clientSecret=clientSecret)
+    username = raw_input('Playlist Owner URI: ')
+    clientID = raw_input('clientID: ')
+    clientSecret = raw_input('clientSecret: ')
+    auto_rec_add(username=username, clientID= clientID, clientSecret=clientSecret)
